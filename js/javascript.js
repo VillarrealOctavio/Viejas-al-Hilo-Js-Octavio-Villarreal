@@ -5,9 +5,9 @@ const stockDeTermos = document.querySelector(".todosTermos")
 const imgAndinista = document.querySelector(".andinista")
 
 // Botones para incluir un "evento".
-const btnBolso = document.querySelector(".botonBolsos")
-const btnMate = document.querySelector(".botonMates")
-const btnTermo = document.querySelector(".botonTermos")
+const btnBolso = document.querySelector("#botonBolsos")
+const btnMate = document.querySelector("#botonMates")
+const btnTermo = document.querySelector("#botonTermos")
 
 
 // Eventos
