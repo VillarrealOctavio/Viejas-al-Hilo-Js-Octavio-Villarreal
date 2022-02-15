@@ -25,13 +25,28 @@
         <div>
           <img src="assets/img/iconos/logoHorizontal.png" alt="Logo">
         </div>
-        <div class="d-flex flex-column justify-content-center">         
-          <img id="mostrarCarrito" src="assets/img/iconos/carritoCompras.png" alt="carrito">
-          <div class="composicionCarrito">
-
+        <div class="d-flex flex-column justify-content-center"> 
+          <button type="button" class="mt-5 mx-5 btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">        
+           <img src="assets/img/iconos/carritoCompras.png" alt="carrito">
+          <button>         
+          <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="modalTitle">Viejas al Hilo</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body modalCarrito">
+                                   
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary"data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
           </div>             
         </div>  
-      </div>
+      </div> 
       <!-- Aquí comienza el nav -->
       <div class="bgMostaza wdh100 col-md-12 my-1 bordeRedondo">
         <ul class="nav d-flex justify-content-center">
@@ -48,24 +63,6 @@
       </div>
 
       <div class="todosMates col-md-12 d-flex flex-wrap justify-content-between">
-        <!-- <select class="" id="">
-          <option value="azul">Azul</option>
-          <option value="blanco">Blanco</option>
-          <option value="caramelo">Caramelo</option>
-          <option value="carmin">Carmin</option>
-          <option value="celeste">Celeste</option>
-          <option value="fucsia">Fucsia</option>
-          <option value="lila">Lila</option>
-          <option value="rosa">Rosa</option>
-          <option value="terracota">Terracota</option>
-          <option value="turqueza">Turqueza</option>
-          <option value="verde">Verde</option>
-          <option value="violeta">Violeta</option>
-          <option value="marrón">Marrón</option>
-          <option value="naranja">Naranja</option>
-          <option value="negro">Negro</option>
-          <option value="rojo">Rojo</option>
-        </select> -->
 
       </div>
       <div class="todosBolsos col-md-12">
@@ -87,6 +84,10 @@
         </div>
       </div>
 
+
+
+
+      
 
 
 
