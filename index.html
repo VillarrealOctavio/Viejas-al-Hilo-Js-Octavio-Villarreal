@@ -14,6 +14,10 @@
     <!-- MI CSS -->
     <link rel="stylesheet" href="style/style.css">
 </head>
+
+
+
+
   <body class="contenedorPadreBody container">
 
     <!-- Aquí se incluye el logo, el carrito de compras y la ubicación-->
@@ -26,25 +30,30 @@
           <img src="assets/img/iconos/logoHorizontal.png" alt="Logo">
         </div>
         <div class="d-flex flex-column justify-content-center"> 
-          <button type="button" class="mt-5 mx-5 btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">        
-           <img src="assets/img/iconos/carritoCompras.png" alt="carrito">
-          <button>         
-          <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h3 class="modal-title" id="modalTitle">Viejas al Hilo</h3>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-                </div>
-                <div class="modal-body modalCarrito">
-                                   
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary"data-bs-dismiss="modal">Cerrar</button>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              <img src="assets/img/iconos/carritoCompras.png" alt="carrito">
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Viejas al Hilo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body modalCarrito">
+
+                  </div>
+                  <div class="modal-footer">
+                    <p>Precio Total: <span id="precioTotal">0</span></p>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>             
+            </div>                 
         </div>  
       </div> 
       <!-- Aquí comienza el nav -->
@@ -60,6 +69,28 @@
             <a id="botonMates" class="nav-link fontMegrim" href="#"><strong>Mates</strong></a>
           </li>
         </ul>       
+      </div>
+
+      <div class="col-md-12">
+        <select id="filtrarMate">
+          <option value="todos">Todos</option>
+          <option value="azul">Azul</option>
+          <option value="blanco">Blanco</option>
+          <option value="caramelo">Caramelo</option>
+          <option value="carmin">Carmin</option>
+          <option value="celeste">Celeste</option>
+          <option value="fucsia">Fucsia</option>
+          <option value="lila">Lila</option>
+          <option value="rosa">Rosa</option>
+          <option value="terracota">Terracota</option>
+          <option value="turqueza">Turqueza</option>
+          <option value="verde">Verde</option>
+          <option value="violeta">Violeta</option>
+          <option value="marron">Marrón</option>
+          <option value="naranja">Naranja</option>
+          <option value="negro">Negro</option>
+          <option value="rojo">Rojo</option>
+        </select>
       </div>
 
       <div class="todosMates col-md-12 d-flex flex-wrap justify-content-between">
@@ -86,7 +117,13 @@
 
 
 
-
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted correo">We'll never share your email with anyone else.</small>
+        </div>
+       
       
 
 
